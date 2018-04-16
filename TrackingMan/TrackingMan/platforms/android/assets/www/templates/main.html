@@ -1,0 +1,59 @@
+﻿<div class="bar bar-header bar-color">
+    <a href="#/signin" class="button button-clear" style="color:black"><i class="icon-big ion-log-out"></i></a>
+    <h1 class="title">TrackingMan</h1>
+    <a href="#/main/settings" class="button button-clear" style="color:black"><i class="icon-big ion-gear-a"></i></a>
+</div>
+<ion-content overflow-scroll="false" class="pane has-header1"> 
+    <ion-refresher pulling-text="Pull to refresh.." on-refresh="doRefresh()"></ion-refresher>    
+    <div class="userInfo padding">        
+        <img src="{{avatar}}" class="avatar">
+        <!--<img src="img/mike.png" class="avatar">-->
+        <h3 class="subnametitle">{{userfname}} {{userlname}}</h3>
+        <hr />      
+        <center>
+            <b>Tracked time: </b>
+            <ul class="countdown">
+                <li>
+                    <span class="hours" id="hour">00</span>
+                    <p class="hours_ref">hours</p>
+                </li>
+                <li class="seperator">:</li>
+                <li>
+                    <span class="minutes" id="minute">00</span>
+                    <p class="minutes_ref">minutes</p>
+                </li>
+                <li class="seperator">:</li>
+                <li>
+                    <span class="seconds" id="second">00</span>
+                    <p class="seconds_ref">seconds</p>
+                </li>
+            </ul>
+        </center>  
+        <div class="pane-main">
+            <p><b>Today is: </b>{{date}}</p>
+            <p id="placeName"><b>Work place: </b>{{data.placeName}}</p>
+            <p><b>Status: </b>{{status}}</p>
+            <p>{{possition}}</p>   
+            {{startDate}}
+            {{finishDate}}
+            {{time}}  {{time2}}
+        </div>
+        <div class="item item-input-inset">
+            <button class="button button-full button_note" ng-click="makeNote()">
+                Make a note
+            </button>
+            <button class="button button-full button_timelogs" ng-click="viewTimeLogs()">
+                View time logs
+            </button>
+        </div>
+        <div class="item item-input-inset">
+            <button class="button button-full button_note" ng-click="start()">
+                Start
+            </button>
+            <button class="button button-full button_timelogs" ng-click="finish()">
+                Finish
+            </button>
+        </div>
+    </div>
+</ion-content>
+

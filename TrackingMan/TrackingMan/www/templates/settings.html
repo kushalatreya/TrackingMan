@@ -1,0 +1,14 @@
+﻿<div class="bar bar-header bar-color">
+    <a ng-click="myGoBack()" class="button button-clear" style="color:black"><i class="icon-big ion-chevron-left"></i></a>
+    <h1 class="title">Settings</h1>
+</div>
+<ion-content overflow-scroll="false" class="pane has-header1">
+    <div class="padding">
+        <ion-toggle ng-model="settings.enableLocation">
+            Enable geolocation
+        </ion-toggle>
+        <button class="button button-block button-sign">
+            Log out
+        </button>
+    </div>
+</ion-content>

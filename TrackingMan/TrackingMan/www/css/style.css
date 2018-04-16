@@ -1,0 +1,209 @@
+﻿/* Empty. Add your own CSS if you like */
+
+/* Common elements */
+.bar .title {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.subtitle, .subnametitle {
+    text-align:center;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.75);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle {
+    padding-top: 20%;
+    padding-bottom: 10px;
+}
+
+.bar, .bar-header {
+    background: url('../img/bg-bar.jpg') no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    width: 100%;
+    border: 0px !important;
+    border-bottom-color: !important;
+    border-bottom: none !important;
+}
+
+.pane {
+    background: url('../img/bg.jpg') no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+/*******************************************/
+
+/* First screen */
+.has-header { padding-top: 110px }
+
+.item-input {
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+}
+
+.input-label, .item-input {
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.75);
+}
+#fname, #lname, #id  {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.75);
+}
+
+.button-sign {
+    background-color: rgba(255, 255, 102, 0.7);
+    -webkit-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+}
+/*.button-sign:hover {
+    background-color: rgba(255, 255, 103, 0.8);
+    -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+}*/
+.button-sign:active {
+    background-color: rgba(226, 226, 70, 0.8);
+    -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+}
+
+.button-report, .button-seePrivacy {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    text-shadow: 2px -1px rgba(0,0,0,0.8);
+}
+.button-report:active {
+    color: #f7b81b;
+    text-decoration: underline;
+}
+.button-seePrivacy:active {
+    color: #f7b81b;
+    text-decoration: underline;
+}
+
+/*******************************************/
+
+/* Second page  */
+.has-header1 {
+    padding-top: 44px;
+}
+
+.pane-main {
+    position: relative;
+    display: block;
+    background: rgba(0,0,0,0.35);
+    height: 100% !important;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+i.icon-big.ion-gear-a  { font-size: 26px }
+i.icon-big.ion-log-out { font-size: 23px }
+i.icon-big.icon-bug    { font-size: 25px }
+
+.userInfo {
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.65);
+}
+
+.avatar {
+    width: 30%;
+    border-radius: 50%;
+    margin: 20px auto -10px auto;
+    display: block;
+    -webkit-box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 38px -10px rgba(0,0,0,0.75);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+ul.countdown {
+   list-style: none;
+   margin: 8px 5px;
+   padding: 0;
+   display: block;
+   text-align: center;
+}
+ul.countdown li {
+   display: inline-block;
+}
+ul.countdown li span {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 10px;
+}
+ul.countdown li.seperator {
+   font-size: 17px;
+   line-height: 18px;
+   vertical-align: top;
+}
+   ul.countdown li p {
+   color: #cdd2d8;
+   font-size: 15px;
+}
+
+.item.item-input-inset {
+    background: none !important;
+    border: 0px !important;
+    padding: 0px !important
+}
+.button_note {
+    background-color: rgba(255, 255, 102, 0.7);
+    border-radius: 5px 0 0 5px;
+}
+.button_note:active { background-color: rgba(226, 226, 70, 0.8) }
+.button_timelogs {
+    background-color: rgba(166, 247, 61, 0.7);
+    border-radius: 0 5px 5px 0;
+}
+.button_timelogs:active { background-color: rgba(130, 211, 25, 0.7) }
+
+.ion-toggle {
+    background: none !important;
+}
+
+
+ /* Time logs page */
+.time_logs_list .time_logs_item, .time_logs_list .item-complex .item-content {
+    background-color: rgba(255,255,255,0.45);
+    border: none !important;
+    color: rgb(10,10,10)
+}
+.time_logs_item .item-content.activated {
+    background-color: rgb(255,255,255) !important;
+}
+.ion-option-button.button.button-assertive {
+    opacity: 0.8;
+}
+
+.ion-option-button.button.button-calm {
+    opacity: 0.8;
+}
